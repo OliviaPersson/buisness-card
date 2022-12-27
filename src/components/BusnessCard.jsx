@@ -1,5 +1,7 @@
 import profileImage from "../images/temporary-profile-image.png";
 import "./BuisnessCard.css";
+import EmailButton from "./EmailButton";
+import LinkedInButton from "./LinkedInButton";
 
 function BuisnessCard() {
   return (
@@ -16,6 +18,8 @@ function BuisnessCard() {
           <small>olivia.persson.website</small>
         </p>
       </div>
+      <EmailButton />
+      {/* <LinkedInButton /> */}
     </div>
   );
 }
