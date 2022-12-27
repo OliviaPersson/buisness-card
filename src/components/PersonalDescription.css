@@ -1,0 +1,21 @@
+.content-container {
+    margin: 0px 0px 27px 0px;;
+}
+
+.label {
+    margin: 0px;
+    width: 242.71px;
+    height: 21px;
+    font-size: 16px;
+    line-height: 150%;
+    color: #F5F5F5;
+}
+
+.text {
+    width: 247px;
+    height: 61px;
+    margin-top: 5px;
+    font-size: 10.24px;
+    line-height: 150%;
+    color: #DCDCDC;
+}

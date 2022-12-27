@@ -1,10 +1,20 @@
 import profileImage from "../images/temporary-profile-image.png";
 import Button from "./Button";
+import PersonalDescription from "./PersonalDescription";
 import emailSymbol from "../images/email-logo.png";
 import linkedinSymbol from "../images/linkedin-logo.png";
 import "./BuisnessCard.css";
 
 function BuisnessCard() {
+  const label = "About";
+  const description = `I am a frontend developer with a particular interest in making things
+    simple and automating daily tasks. I try to keep up with security and
+    best practices, and am always looking for new things to learn.`;
+
+  const label2 = "Interests";
+  const description2 = `Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
+  Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.`;
+
   return (
     <div className="buisness-card">
       <img
@@ -36,17 +46,8 @@ function BuisnessCard() {
         />
       </div>
       <div className="main-content">
-        <h3>About</h3>
-        <p>
-          I am a frontend developer with a particular interest in making things
-          simple and automating daily tasks. I try to keep up with security and
-          best practices, and am always looking for new things to learn.
-        </p>
-        <h3>Interests</h3>
-        <p>
-          Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
-          Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.
-        </p>
+        <PersonalDescription label={label} text={description} />
+        <PersonalDescription label={label2} text={description2} />
       </div>
     </div>
   );
