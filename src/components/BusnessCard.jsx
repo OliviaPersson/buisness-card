@@ -1,7 +1,8 @@
 import profileImage from "../images/temporary-profile-image.png";
+import Button from "./Button";
+import emailSymbol from "../images/email-logo.png";
+import linkedinSymbol from "../images/linkedin-logo.png";
 import "./BuisnessCard.css";
-import EmailButton from "./EmailButton";
-import LinkedInButton from "./LinkedInButton";
 
 function BuisnessCard() {
   return (
@@ -18,8 +19,22 @@ function BuisnessCard() {
           <small>olivia.persson.website</small>
         </p>
       </div>
-      <EmailButton />
-      {/* <LinkedInButton /> */}
+      <div className="buttons-container">
+        <Button
+          label="Email"
+          symbol={emailSymbol}
+          backgroundColor="#FFFFFF"
+          color="#374151"
+          border="1px solid #D1D5DB"
+        />
+        <Button
+          label="Linkedin"
+          symbol={linkedinSymbol}
+          backgroundColor="#5093E2"
+          color="#FFFFFF"
+          border="1px solid #5093E2"
+        />
+      </div>
     </div>
   );
 }
