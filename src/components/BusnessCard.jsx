@@ -3,17 +3,11 @@ import Button from "./Button";
 import PersonalDescription from "./PersonalDescription";
 import emailSymbol from "../images/email-logo.png";
 import linkedinSymbol from "../images/linkedin-logo.png";
+import { getData } from "../data.js";
 import "./BuisnessCard.css";
 
 function BuisnessCard() {
-  const label = "About";
-  const description = `I am a frontend developer with a particular interest in making things
-    simple and automating daily tasks. I try to keep up with security and
-    best practices, and am always looking for new things to learn.`;
-
-  const label2 = "Interests";
-  const description2 = `Food expert. Music scholar. Reader. Internet fanatic. Bacon buff.
-  Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.`;
+  const data = getData();
 
   return (
     <div className="buisness-card">
@@ -46,8 +40,9 @@ function BuisnessCard() {
         />
       </div>
       <div className="main-content">
-        <PersonalDescription label={label} text={description} />
-        <PersonalDescription label={label2} text={description2} />
+        {data.map((d) => (
+          <PersonalDescription label={d.label} text={d.description} />
+        ))}
       </div>
     </div>
   );
