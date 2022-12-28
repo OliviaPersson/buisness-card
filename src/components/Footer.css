@@ -1,0 +1,16 @@
+.footer-icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    margin-top: 24px;
+    background: #161619;
+    border-radius: 0px 0px 10px 10px;
+    padding: 19px 73px 20px 73px;
+    cursor: pointer;
+}
+
+.footer-icon {
+    margin: 0px;
+}
